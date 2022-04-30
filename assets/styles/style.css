@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+:root{
+--primary-color: #ad59d4;
+--secondary-color: #f9a11b;
+}
+
+
+
+/*. Reset  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/*. Navigation */
+
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 3px 5px rgba(143,143,143,0.3);
+}
+
+.nav-logo{
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.nav-menu{
+    float: right;
+    display: flex;
+}
+
+.nav-menu li{
+    margin: 5px 30px;
+    padding: .1em .6em;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 7px 1px rgba(173, 89, 212, 0.35);
+    border-radius: 50px;
+    list-style-type: none;
+
+}
+
+.nav-menu li:hover{
+    box-shadow: 0px 0px 7px 1px rgba(249, 161,	27, 0.25);
+}
+
+.nav-menu li:hover a{
+    color: var(--secondary-color);
+}
+
+/*. Hero */
+
+.hero-img{
+    width: 500px;
+}
