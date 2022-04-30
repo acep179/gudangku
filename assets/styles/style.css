@@ -76,6 +76,17 @@ nav{
 
 /*. Hero */
 
+.hero{
+    display: flex;
+    align-items: center;
+}
+
 .hero-img{
-    width: 500px;
+    background-image: url("assets/img/hero.png");
+    flex-basis: 30%;
+}
+
+.hero-article{
+    margin-top: 40px;
+    flex-basis: 70%;
 }
