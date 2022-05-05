@@ -6,6 +6,9 @@
 
 --mar-1: 2rem;
 --mar-2: 1rem;
+--mar-3: .5rem;
+
+--lh-1: 25px;
 }
 
 
@@ -45,7 +48,7 @@ body{
 
 nav{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 38px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -110,5 +113,44 @@ nav{
 
 .hero-article p{
     margin-bottom: var(--mar-2);
-    line-height: 25px;
+    line-height: var(--lh-1);
+}
+
+/*. Features */
+
+.features{
+    margin: var(--mar-1);
+}
+
+.features h1{
+    margin-bottom: var(--mar-1);
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.features section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features article{
+    max-width: 822px;
+    min-width: 400px;
+    line-height: var(--lh-1);
+}
+
+.features h2{
+    margin-bottom: var(--mar-2);
+    color: var(--secondary-color);
+}
+
+.features p{
+    margin-bottom: var(--mar-3);
+}
+
+.features img{
+    margin: var(--mar-1);
+    max-width: 822px;
+    min-width: 400px;
 }

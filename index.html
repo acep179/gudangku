@@ -9,49 +9,128 @@
     <title>Gudangku</title>
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <nav class="cf">
-                <img class="nav-logo" src="assets/img/logo.png" alt="Logo Gudangku">
-                <ul class="nav-menu">
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#feature">Fitur</a></li>
-                    <li><a href="#about">Tentang Kami</a></li>
-                    <li><a href="#contact">Kontak</a></li>
-                </ul>
-            </nav>
+<body id="home">
+    <header>
+        <nav class="cf">
+            <img class="nav-logo" src="assets/img/logo.png" alt="Logo Gudangku">
+            <ul class="nav-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
 
-            <div class="hero">
-                <img class="hero-img" src="assets/img/hero.png" alt="Hero">
-                <article class="hero-article">
-                    <h1>Pantau Gudangmu di mana Saja dan Kapan Saja !</h1>
-                    <p>Gudangku adalah sebuah aplikasi manajemen gudang berbasis web yang sangat cocok untuk para pelaku
-                        bisnis baik pelaku bisnis UMKM maupun pelaku bisnis besar.</p>
+        <div class="hero">
+            <img class="hero-img" src="assets/img/hero.png" alt="Hero">
+            <article class="hero-article">
+                <h1>Pantau Gudangmu di mana Saja dan Kapan Saja !</h1>
+                <p>Gudangku adalah sebuah aplikasi manajemen gudang berbasis web yang sangat cocok untuk para pelaku
+                    bisnis baik pelaku bisnis UMKM maupun pelaku bisnis besar.</p>
 
-                    <p>
-                        Karena berbasis web, aplikasi gudangku dapat digunakan di berbagai perangkat. Baik di Komputer,
-                        Laptop, Tablet, bahkan Smartphone. Hal ini memudahkan bagi pemilik bisnis untuk memantau
-                        ketersediaan barang di gudang secara up-to-date karena dapat memantaunya kapan pun dan di mana
-                        pun.
-                        Dengan fitur-fitur yang dimiliki oleh gudangku, semua transaksi keluar dan masuknya barang akan
-                        tercatat dengan rapi, aman, dan nyaman.
-                    </p>
+                <p>
+                    Karena berbasis web, aplikasi gudangku dapat digunakan di berbagai perangkat. Baik di Komputer,
+                    Laptop, Tablet, bahkan Smartphone. Hal ini memudahkan bagi pemilik bisnis untuk memantau
+                    ketersediaan barang di gudang secara up-to-date karena dapat memantaunya kapan pun dan di mana
+                    pun.
+                    Dengan fitur-fitur yang dimiliki oleh gudangku, semua transaksi keluar dan masuknya barang akan
+                    tercatat dengan rapi, aman, dan nyaman.
+                </p>
 
-                    <a href="#features">Lihat fitur-fitur dari gudangku ⬇️</a>
-                </article>
-            </div>
-        </header>
-
-        <main>
-            <article>
-
+                <a href="#features">Lihat fitur-fitur dari gudangku ! ↓ → (pakein dropdown)</a>
             </article>
-            <aside>
+        </div>
+    </header>
 
-            </aside>
-        </main>
-    </div>
+    <main id="features" class="features">
+        <h1>Berikut adalah fitur-fitur yang dimiliki oleh gudangku</h1>
+        <section class="feature-laporku">
+            <article>
+                <h2>Fitur Laporku</h2>
+                <p>
+                    Dengan fitur ini, laporan persediaan barang gudang akan dibuatkan secara otomatis oleh sistem.
+                </p>
+                <p>
+                    Adapun laporan-laporan tersebut berupa: <br>
+                    - Laporan 5-10 barang dengan stok terbanyak & tersedikit di gudang <br>
+                    - Laporan barang dengan transaksi keluar-masuk terbanyak dan tersedikit <br>
+                    - Laporan total barang masuk dan keluar per item
+                </p>
+            </article>
+            <img src="assets/img/laporku.png" alt="Laporku">
+        </section>
+        <section class="feature-peripsi">
+            <img src="assets/img/peripsi.png" alt="Perisai Enkripsi">
+            <article>
+                <h2>Fitur Peripsi : Perisai Enkripsi</h2>
+                <p>
+                    Semua pelaku bisnis tidak ingin data bisnisnya bocor dan dapat diakses oleh orang lain. Kami
+                    menyadari akan hal itu. Maka dari itu, dengan fitur perisai enkripsi semua transaksi yang dilakukan
+                    oleh pelaku bisnis dijamin keamanannya. Dengan enkripsi, setiap data tidak akan dapat diakses
+                    oleh siapapun.
+                </p>
+                <p>
+                    Selain itu, dengan teknologi perisai yang kami miliki pada server kami, server kami pun menjadi.....
+                </p>
+            </article>
+        </section>
+        <section class="feature-makardang">
+            <article>
+                <h2>Fitur Manajemen Karyawan Gudang (Makardang)</h2>
+                <p>
+                    Tidak semua karyawan dapat melakukan perubahan data, bukan? Dengan fitur ini, selain dapat
+                    membuatkan
+                    akun untuk masing-masing karyawan, kita pun dapat mengatur izin penggunaan aplikasi yang dapat
+                    dilakukan oleh setiap karyawan.
+                </p>
+                <p>
+                    Dengan akun yang berbeda-beda bagi setiap karyawan, pencatatan transaksi pun akan terpantau lebih
+                    baik dengan mengetahui siapa yang bertanggungjawab atas sebuah transaksi yang telah dilakukan.
+                </p>
+            </article>
+            <img src="assets/img/makardang.png" alt="Manajemen Karyawan Gudang">
+        </section>
+        <section class=" feature-integrasi">
+            <img src="assets/img/integration.jpg" alt="Integrasi">
+            <article>
+                <h2>Fitur Integrasi</h2>
+                <p>
+                    Tentu saja, dalam menjalankan bisnis tidak hanya gudang yang perlu menerapkan manajemen yang baik.
+                    Masih ada kegiatan lain yang perlu menerapkan manajemen dengan baik agar sebuah bisnis berjalan
+                    dengan baik.
+                </p>
+                <p>
+                    Dengan menggunakan aplikasi Gudangku, kita dapat terintegrasi dengan aplikasi Kasirku untuk
+                    melakukan pencatatan penjualan dan aplikasi Akuntansiku untuk melakukan pencatatan keuangan yang
+                    keluar dan masuk. Bahkan, masing-masing aplikasi dapat menampilkan laporannya masing-masing sesuai
+                    dengan kebutuhan kita.
+                </p>
+            </article>
+        </section>
+        <section class="feature-pusang">
+            <article>
+                <h2>Fitur Pusat-Cabang (Pusang)</h2>
+                <p>
+                    Anda memiliki bisnis franchise dan bahan-bahan di cabang franchise harus berasal dari pusat? Tidak
+                    masalah! Dengan fitur Pusat-Cabang, pencatatan ketersediaan barang antara pusat dengan cabang akan
+                    terintegrasi. Cabang dapat melakukan permintaan pengiriman barang atau bahan langsung kepada pusat.
+                    Dengan teknologi QR Code, proses pengiriman barang akan terpantau secara real-time sejak
+                    diberangkatkan dari pusat hingga sampai di Cabang dan pencatatan pun akan dilakukan secara otomatis!
+                </p>
+                <p>
+                    Dengan memanfaatkan fitur ini, Gudang Pusat dapat mengatur ketersediaan barang yang dibutuhkan.
+                    Sehingga, pusat tidak akan menyetok barang-barang yang masih banyak di cabang dan dapat segera
+                    mengisi barang-barang yang akan dibutuhkan oleh cabang. Sangat mempermudah bukan? :D
+                </p>
+            </article>
+            <img src="assets/img/pusang.png" alt="Pusat-Cabang">
+        </section>
+        <aside>
+            <div id="about">
+
+            </div>
+        </aside>
+    </main>
 </body>
 
 </html>
