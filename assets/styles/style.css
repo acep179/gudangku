@@ -43,6 +43,13 @@ body{
     clear: both;
 }
 
+header{
+    background: linear-gradient(0deg, rgba(230,200,241,1) 0%, rgba(255,255,255,1) 56%);
+}
+
+header svg{
+    margin-bottom: -7px;
+}
 
 /*. Navigation */
 
@@ -136,7 +143,6 @@ nav{
 
 .features article{
     max-width: 822px;
-    min-width: 400px;
     line-height: var(--lh-1);
 }
 
@@ -152,5 +158,5 @@ nav{
 .features img{
     margin: var(--mar-1);
     max-width: 822px;
-    min-width: 400px;
+    min-width: 0;
 }
