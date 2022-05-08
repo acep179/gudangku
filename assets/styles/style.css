@@ -160,3 +160,107 @@ nav{
     max-width: 822px;
     min-width: 0;
 }
+
+/*. Aside */
+
+.aside-title{
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: calc(4*var(--mar-1));
+    margin-bottom: var(--mar-1);
+}
+
+.aside-title h1{
+    font-size: 2em;    
+}
+
+.aside-title h2{
+    font-size: 1.8em;
+}
+
+/*. Contact */
+
+.contact{
+    margin-bottom: var(--mar-1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact h2{
+    color: var(--secondary-color);
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: var(--mar-2);
+}
+
+/*. Social Media */
+
+.social-media{
+    width: 347px;
+    padding: 1.25rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: var(--mar-3);
+    margin-bottom: var(--mar-2);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.social-media h3{
+    text-align: center;
+}
+
+.social-media a{
+    flex-basis: 100%;
+    word-spacing: 5px;
+}
+
+.social-media .icon{
+    font-size: var(--mar-1);
+}
+
+/*. Contact Form */
+
+.contact-form{
+    width: 347px;
+    margin-left: var(--mar-3);
+}
+
+.contact-form input{
+    font-family: inherit;
+    font-size: inherit;
+    width: 347px;
+    height: 2.1rem;
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.contact-form textarea{
+    font-family: inherit;
+    font-size: inherit;
+    width: 347px;
+    height: 6rem;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.contact-form button{
+    width: 107px;
+    height: 1.8rem;
+    background-color: var(--primary-color);
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/*. About */
+
+.about h2{
+    color: var(--secondary-color);
+}

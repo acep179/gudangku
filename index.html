@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Gudangku</title>
 </head>
@@ -129,12 +130,79 @@
             </article>
             <img src="assets/img/pusang.png" alt="Pusat-Cabang">
         </section>
-        <aside>
-            <div id="about">
-
-            </div>
-        </aside>
     </main>
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(249, 161, 27, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 196, 69, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+            d="M0,81L480,216L960,189L1440,216L1920,216L2400,27L2880,243L3360,216L3840,135L4320,243L4800,27L5280,81L5760,27L6240,216L6720,108L7200,189L7680,162L8160,189L8640,27L9120,135L9600,27L10080,162L10560,162L11040,216L11520,81L11520,270L11040,270L10560,270L10080,270L9600,270L9120,270L8640,270L8160,270L7680,270L7200,270L6720,270L6240,270L5760,270L5280,270L4800,270L4320,270L3840,270L3360,270L2880,270L2400,270L1920,270L1440,270L960,270L480,270L0,270Z">
+        </path>
+        <defs>
+            <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(249, 161, 27, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 196, 69, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+            d="M0,108L480,243L960,135L1440,81L1920,54L2400,135L2880,108L3360,162L3840,162L4320,81L4800,162L5280,162L5760,27L6240,108L6720,189L7200,162L7680,162L8160,135L8640,0L9120,135L9600,189L10080,81L10560,243L11040,162L11520,189L11520,270L11040,270L10560,270L10080,270L9600,270L9120,270L8640,270L8160,270L7680,270L7200,270L6720,270L6240,270L5760,270L5280,270L4800,270L4320,270L3840,270L3360,270L2880,270L2400,270L1920,270L1440,270L960,270L480,270L0,270Z">
+        </path>
+        <defs>
+            <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(249, 161, 27, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 196, 69, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)"
+            d="M0,108L480,189L960,27L1440,189L1920,162L2400,108L2880,108L3360,108L3840,162L4320,27L4800,27L5280,216L5760,135L6240,189L6720,108L7200,108L7680,54L8160,81L8640,0L9120,81L9600,216L10080,81L10560,54L11040,54L11520,162L11520,270L11040,270L10560,270L10080,270L9600,270L9120,270L8640,270L8160,270L7680,270L7200,270L6720,270L6240,270L5760,270L5280,270L4800,270L4320,270L3840,270L3360,270L2880,270L2400,270L1920,270L1440,270L960,270L480,270L0,270Z">
+        </path>
+    </svg>
+    <aside>
+        <div class="aside-title">
+            <h1>Tertarik dengan desain di atas?</h1>
+            <h2>Segera Hubungi Kami !</h2>
+        </div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="social-media">
+                <h3>My Social Media</h3>
+                <a href="mailto:acep.awaludin179@gmail.com" target="_blank">
+                    <i class='bx bx-envelope icon'></i>
+                    acep.awaludin179@gmail.com
+                </a>
+                <a href="wa.me/6281383647020" target="_blank">
+                    <i class='bx bxl-whatsapp icon'></i>
+                    (+62)813 8364 7020
+                </a>
+                <a href="https://www.linkedin.com/in/acep179/" target="_blank">
+                    <i class='bx bxl-linkedin icon'></i>
+                    @acep179
+                </a>
+                <a href="https://github.com/acep179" target="_blank">
+                    <i class='bx bxl-github icon'></i>
+                    @acep179
+                </a>
+            </div>
+            <div class="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name"><br>
+                <label for="email">E-Mail:</label><br>
+                <input type="text" id="email"><br>
+                <label for="numPhone">No. HP / WhatsApp:</label><br>
+                <input type="text" id="numPhone"><br>
+                <label for="massage">Pesan:</label><br>
+                <textarea name="" id="massage" cols="30" rows="10"></textarea>
+                <button>Kirim</button>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About Me</h2>
+        </div>
+    </aside>
 </body>
 
 </html>
