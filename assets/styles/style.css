@@ -47,7 +47,7 @@ nav{
     position: fixed;
     z-index: 9999;
     width: 100%;
-    padding: 3px 30px;
+    padding: 5px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,17 +56,14 @@ nav{
     box-shadow: 0px 3px 5px rgba(143,143,143,0.3);
 }
 
-.nav-logo{
-    margin: 2px 0 2px 20px;
-}
-
 .nav-menu{
+    width: 500px;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-menu li{
     font-size: small;
-    margin: 0 30px;
     padding: .1em .6em;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
@@ -82,6 +79,10 @@ nav{
 
 .nav-menu li:hover a{
     color: var(--secondary-color);
+}
+
+.nav-button{
+    display: none;
 }
 
 /*. Hero */
@@ -334,6 +335,12 @@ footer{
 }
 
 @media screen and (max-width:992px) {
+
+    /*. Nav Tablet */
+
+    .nav-menu{
+        width: 60%;
+    }    
     
     /*. Hero Tablet */
     
@@ -379,13 +386,20 @@ footer{
         display: none;
     }
 
+    .nav-button{
+        display: block;
+        font-size: 1.7rem;
+    }
+
     /*. Hero Smartphone */
 
     .hero{
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .hero-img{
+        width: 100%;
         margin-top: var(--mar-1);
     }
 
