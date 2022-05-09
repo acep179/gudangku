@@ -145,6 +145,7 @@ nav{
 .features article{
     max-width: 822px;
     line-height: var(--lh-1);
+    flex-basis: 65%;
 }
 
 .features h2{
@@ -153,13 +154,14 @@ nav{
 }
 
 .features p{
-    margin-bottom: var(--mar-3);
+    margin-bottom: var(--mar-2);
 }
 
 .features img{
     margin: var(--mar-1);
     max-width: 822px;
     min-width: 0;
+    flex-basis: 35%;
 }
 
 .features svg{
@@ -231,7 +233,7 @@ nav{
 /*. Contact Form */
 
 .contact-form{
-    width: 347px;
+    max-width: 347px;
     aspect-ratio: 347/392;
     margin-left: var(--mar-3);
 }
@@ -292,7 +294,7 @@ nav{
     width: 200px;
     border: 3px solid var(--primary-color);
     border-radius: 0 50%;
-    position:absolute;
+    position: absolute;
     left: -100px;
     top: 50px;
 }
@@ -307,9 +309,8 @@ nav{
 }
 
 .biodata .atas{
-    margin-left: 95px;
+    margin-left: 100px;
     margin-bottom: var(--mar-2);
-    text-align: center;
     line-height: 33px;
     font-weight: bold;
 }
@@ -341,3 +342,149 @@ footer{
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width:992px) {
+    
+    /*. Hero Tablet */
+    
+
+    .hero{
+        display:block;
+    }
+    
+    .hero-img{
+        margin-top: var(--mar-1);
+        width: 400px;
+        float: left;
+    }    
+
+    .hero:before,
+    .hero:after {
+        content: " ";
+        display: table;
+    }
+    
+    .hero:after {
+        clear: left;
+    }
+    
+
+    /*. Features Tablet */
+
+    .features article{
+        flex-basis: 50%;
+    }
+
+    .features img{
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    /*. Nav Smartphone */
+
+    .nav-menu li{
+        display: none;
+    }
+
+    /*. Hero Smartphone */
+
+    .hero{
+        flex-wrap: wrap;
+    }
+
+    .hero-img{
+        margin-top: var(--mar-1);
+    }
+
+    /*. Features Smartphone */
+
+    .features section{
+        flex-wrap: wrap;
+    }
+
+    .features article{
+    flex-basis: 100%;
+    order: 1;
+    }
+
+    .features img{
+    flex-basis: 100%;
+    order: 2;
+    }
+
+    /*. Contact Smartphone */
+
+    .contact{
+        width: 296px;
+        margin: auto;
+    }
+
+    /*. Social Media Smartphone */
+
+    .social-media{
+        width: 100%;
+        height: 392px;
+    }
+    
+    .social-media a{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .social-media i{
+        flex-basis: 100%;
+    }
+
+    /*. Contact Form Smartphone */
+
+    .contact-form{
+        width: 296px;
+        margin: auto;
+    }
+
+    .contact-form h2{
+        margin-top: calc(2*var(--mar-1));
+        display: block;
+    }
+
+    .contact-form input{
+        width: 100%;
+    }
+
+    .contact-form textarea{
+        width: 100%;    
+    }
+
+    
+    /*. About Smartphone */
+    
+    .about{
+        position: static;
+        margin-top: calc(2*var(--mar-1));
+    }
+    
+    .about h2{
+        margin-bottom: var(--mar-1);
+    }
+    
+    .biodata{
+        width: 296px;
+    }
+
+    .biodata img{
+        position: static;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .biodata .atas{
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+    
