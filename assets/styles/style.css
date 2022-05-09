@@ -55,6 +55,7 @@ header svg{
 
 nav{
     position: fixed;
+    z-index: 9999;
     width: 100%;
     height: 38px;
     background: rgba(255, 255, 255, 0.1);
@@ -161,13 +162,17 @@ nav{
     min-width: 0;
 }
 
+.features svg{
+    margin: calc(-1*var(--mar-1));
+}
+
 /*. Aside */
 
 .aside-title{
     color: var(--primary-color);
     text-align: center;
-    margin-top: calc(4*var(--mar-1));
-    margin-bottom: var(--mar-1);
+    margin-top: calc(5*var(--mar-1));
+    margin-bottom: calc(2*var(--mar-1));
 }
 
 .aside-title h1{
@@ -181,7 +186,7 @@ nav{
 /*. Contact */
 
 .contact{
-    margin-bottom: var(--mar-1);
+    margin-bottom: calc(2*var(--mar-1));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -198,11 +203,11 @@ nav{
 
 .social-media{
     width: 347px;
-    padding: 1.25rem;
+    aspect-ratio: 347/392;
+    padding: 2em 1.3em;
     border: 1px solid black;
     border-radius: 20px;
     margin-right: var(--mar-3);
-    margin-bottom: var(--mar-2);
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -214,25 +219,33 @@ nav{
 
 .social-media a{
     flex-basis: 100%;
-    word-spacing: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .social-media .icon{
     font-size: var(--mar-1);
+    margin-right: var(--mar-3);
 }
 
 /*. Contact Form */
 
 .contact-form{
     width: 347px;
+    aspect-ratio: 347/392;
     margin-left: var(--mar-3);
 }
 
+.contact-form h2{
+    display: none;
+}
+
 .contact-form input{
-    font-family: inherit;
+    font-family: inherit; 
     font-size: inherit;
     width: 347px;
     height: 2.1rem;
+    margin-bottom: var(--mar-3);
     padding: 0 10px;
     border: 1px solid black;
     border-radius: 10px;
@@ -242,7 +255,9 @@ nav{
     font-family: inherit;
     font-size: inherit;
     width: 347px;
-    height: 6rem;
+    min-height: 8rem;
+    max-height: fit-content;
+    margin-bottom: var(--mar-3);
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
@@ -261,6 +276,68 @@ nav{
 
 /*. About */
 
+.about{
+    width: 347px;
+    margin: auto;
+    position: relative;
+}
+
 .about h2{
     color: var(--secondary-color);
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.about img{
+    width: 200px;
+    border: 3px solid var(--primary-color);
+    border-radius: 0 50%;
+    position:absolute;
+    left: -100px;
+    top: 50px;
+}
+
+.biodata{
+    width: 347px;
+    aspect-ratio: 347/250;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(173, 89, 212, 2);
+    border-radius: 20px;
+}
+
+.biodata .atas{
+    margin-left: 95px;
+    margin-bottom: var(--mar-2);
+    text-align: center;
+    line-height: 33px;
+    font-weight: bold;
+}
+
+.biodata hr{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.biodata .bawah{
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.biodata p{
+    flex-basis: 100%;
+}
+
+/*. Footer */
+
+footer{
+    width: 100%;
+    margin-top: calc(5*var(--mar-1));
+    padding: 2em;
+    background-color: #eb9604;
+    color: white;
+    text-align: center;
 }
