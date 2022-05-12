@@ -81,7 +81,7 @@ nav{
     color: var(--secondary-color);
 }
 
-.nav-button{
+.nav-menu~i{
     display: none;
 }
 
@@ -382,25 +382,58 @@ footer{
 
     /*. Nav Smartphone */
 
-    .nav-menu li{
+    nav{
+    padding: 5px 20px;
+    }
+
+    .nav-menu{
         display: none;
     }
 
-    .nav-button{
+    .nav-menu-show{
+        width: 150px;
+        height: 190px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        box-shadow: -3px 3px 5px rgba(143,143,143,0.3);
+        text-align: center;
+    }
+
+    .nav-menu li{
+        margin: 0 1em;
         display: block;
+    }
+
+    .nav-menu~i{
         font-size: 1.7rem;
+        cursor: pointer;
+    }
+
+    i.nav-button-show{
+        display: block;
+    }
+    
+    i.nav-button-hide{
+        display: none;
     }
 
     /*. Hero Smartphone */
 
-    .hero{
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .hero-img{
         width: 100%;
         margin-top: var(--mar-1);
+    }
+
+    .drop-down ul li{
+    }
+
+    .hide{
+        display: none;
     }
 
     /*. Features Smartphone */

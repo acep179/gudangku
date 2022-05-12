@@ -14,13 +14,14 @@
     <header>
         <nav>
             <img class="nav-logo" src="assets/img/logo.png" alt="Logo Gudangku">
-            <ul class="nav-menu">
+            <ul id="navMenu" class="nav-menu">
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#features">Fitur</a></li>
                 <li><a href="#contact">Kontak</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
             </ul>
-            <i class='bx bx-menu nav-button'></i>
+            <i id="navButton" class='bx bx-menu nav-button-show'></i>
+            <i id="navButtonClose" class='bx bx-x nav-button-hide'></i>
         </nav>
         <div class="hero">
             <img class="hero-img" src="assets/img/hero.png" alt="Hero">
@@ -38,7 +39,16 @@
                     tercatat dengan rapi, aman, dan nyaman.
                 </p>
 
-                <a href="#features">Lihat fitur-fitur dari gudangku ! ↓ → (pakein dropdown)</a>
+                <p class="drop-down">
+                    <a id="dropDownButton">Lihat fitur-fitur dari gudangku ! ↓</a>
+                    <ul class="">
+                        <li><a href="#featureLaporku">Fitur Laporku</a></li>
+                        <li>Fitur Peripsi</li>
+                        <li>Fitur Makardang</li>
+                        <li>Fitur Integrasi</li>
+                        <li>Fitur Pusang</li>
+                    </ul>
+                </p>
             </article>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -224,6 +234,7 @@
     <footer>
         <p><i class='bx bx-copyright'></i> 2022 Acep Awaludin</p>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
