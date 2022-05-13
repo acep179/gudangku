@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
-:root{
 
---primary-color: #ad59d4;
---secondary-color: #f9a11b;
+:root {
 
---mar-1: 2rem;
---mar-2: 1rem;
---mar-3: .5rem;
+    --primary-color: #ad59d4;
+    --secondary-color: #f9a11b;
 
---lh-1: 25px;
+    --mar-1: 2rem;
+    --mar-2: 1rem;
+    --mar-3: .5rem;
+
+    --lh-1: 25px;
 }
 
 
@@ -20,30 +21,30 @@
     padding: 0;
 }
 
-a{
+a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: var(--secondary-color);
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-header{
-    background: linear-gradient(0deg, rgba(230,200,241,1) 0%, rgba(255,255,255,1) 56%);
+header {
+    background: linear-gradient(0deg, rgba(230, 200, 241, 1) 0%, rgba(255, 255, 255, 1) 56%);
 }
 
-header svg{
+header svg {
     margin-bottom: -7px;
 }
 
 /*. Navigation */
 
-nav{
+nav {
     position: fixed;
     z-index: 9999;
     width: 100%;
@@ -53,16 +54,16 @@ nav{
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    box-shadow: 0px 3px 5px rgba(143,143,143,0.3);
+    box-shadow: 0px 3px 5px rgba(143, 143, 143, 0.3);
 }
 
-.nav-menu{
+.nav-menu {
     width: 500px;
     display: flex;
     justify-content: space-between;
 }
 
-.nav-menu li{
+.nav-menu li {
     font-size: small;
     padding: .1em .6em;
     background: rgba(255, 255, 255, 0.7);
@@ -73,119 +74,117 @@ nav{
 
 }
 
-.nav-menu li:hover{
-    box-shadow: 0px 0px 7px 1px rgba(249, 161,	27, 0.25);
+.nav-menu li:hover {
+    box-shadow: 0px 0px 7px 1px rgba(249, 161, 27, 0.25);
 }
 
-.nav-menu li:hover a{
+.nav-menu li:hover a {
     color: var(--secondary-color);
 }
 
-.nav-menu~i{
+.nav-menu~i {
     display: none;
 }
 
 /*. Hero */
 
-.hero{
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-img{
+.hero-img {
     max-width: 822px;
-    min-width: 400px;
+    min-width: 0;
 }
 
-.hero-article{
-    max-width: 822px;   
-    min-width: 400px;
+.hero-article {
     padding: 50px;
 }
 
-.hero-article h1{
+.hero-article h1 {
     color: var(--primary-color);
     margin-bottom: var(--mar-1);
     text-transform: uppercase;
 }
 
-.hero-article p{
+.hero-article p {
     margin-bottom: var(--mar-2);
     line-height: var(--lh-1);
 }
 
 /*. Features */
 
-.features{
+.features {
     margin: var(--mar-1);
 }
 
-.features h1{
+.features h1 {
     margin-bottom: var(--mar-1);
     text-align: center;
     color: var(--primary-color);
 }
 
-.features section{
+.features section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.features article{
+.features article {
     max-width: 822px;
     line-height: var(--lh-1);
     flex-basis: 65%;
 }
 
-.features h2{
+.features h2 {
     margin-bottom: var(--mar-2);
     color: var(--secondary-color);
 }
 
-.features p{
+.features p {
     margin-bottom: var(--mar-2);
 }
 
-.features img{
+.features img {
     margin: var(--mar-1);
     max-width: 822px;
     min-width: 0;
     flex-basis: 35%;
 }
 
-.features svg{
+.features svg {
     margin: calc(-1*var(--mar-1));
 }
 
 /*. Aside */
 
-.aside-title{
+.aside-title {
     color: var(--primary-color);
     text-align: center;
     margin-top: calc(5*var(--mar-1));
     margin-bottom: calc(2*var(--mar-1));
 }
 
-.aside-title h1{
-    font-size: 2em;    
+.aside-title h1 {
+    font-size: 2em;
 }
 
-.aside-title h2{
+.aside-title h2 {
     font-size: 1.8em;
 }
 
 /*. Contact */
 
-.contact{
+.contact {
     margin-bottom: calc(2*var(--mar-1));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.contact h2{
+.contact h2 {
     color: var(--secondary-color);
     text-align: center;
     flex-basis: 100%;
@@ -194,7 +193,7 @@ nav{
 
 /*. Social Media */
 
-.social-media{
+.social-media {
     width: 347px;
     aspect-ratio: 347/392;
     padding: 2em 1.3em;
@@ -206,35 +205,35 @@ nav{
     align-content: space-between;
 }
 
-.social-media h3{
+.social-media h3 {
     text-align: center;
 }
 
-.social-media a{
+.social-media a {
     flex-basis: 100%;
     display: flex;
     align-items: center;
 }
 
-.social-media .icon{
+.social-media .icon {
     font-size: var(--mar-1);
     margin-right: var(--mar-3);
 }
 
 /*. Contact Form */
 
-.contact-form{
+.contact-form {
     max-width: 347px;
     aspect-ratio: 347/392;
     margin-left: var(--mar-3);
 }
 
-.contact-form h2{
+.contact-form h2 {
     display: none;
 }
 
-.contact-form input{
-    font-family: inherit; 
+.contact-form input {
+    font-family: inherit;
     font-size: inherit;
     width: 347px;
     height: 2.1rem;
@@ -244,7 +243,7 @@ nav{
     border-radius: 10px;
 }
 
-.contact-form textarea{
+.contact-form textarea {
     font-family: inherit;
     font-size: inherit;
     width: 347px;
@@ -256,7 +255,7 @@ nav{
     border-radius: 10px;
 }
 
-.contact-form button{
+.contact-form button {
     width: 107px;
     height: 1.8rem;
     background-color: var(--primary-color);
@@ -269,19 +268,19 @@ nav{
 
 /*. About */
 
-.about{
+.about {
     width: 347px;
     margin: auto;
     position: relative;
 }
 
-.about h2{
+.about h2 {
     color: var(--secondary-color);
     margin-bottom: 100px;
     text-align: center;
 }
 
-.about img{
+.about img {
     width: 200px;
     border: 3px solid var(--primary-color);
     border-radius: 0 50%;
@@ -290,7 +289,7 @@ nav{
     top: 50px;
 }
 
-.biodata{
+.biodata {
     width: 347px;
     aspect-ratio: 347/250;
     margin: auto;
@@ -299,19 +298,19 @@ nav{
     border-radius: 20px;
 }
 
-.biodata .atas{
+.biodata .atas {
     margin-left: 100px;
     margin-bottom: var(--mar-2);
     line-height: 33px;
     font-weight: bold;
 }
 
-.biodata hr{
+.biodata hr {
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
 }
 
-.biodata .bawah{
+.biodata .bawah {
     height: 100%;
     margin-top: 20px;
     display: flex;
@@ -319,13 +318,13 @@ nav{
     align-content: space-between;
 }
 
-.biodata p{
+.biodata p {
     flex-basis: 100%;
 }
 
 /*. Footer */
 
-footer{
+footer {
     width: 100%;
     margin-top: calc(5*var(--mar-1));
     padding: 2em;
@@ -338,41 +337,42 @@ footer{
 
     /*. Nav Tablet */
 
-    .nav-menu{
+    .nav-menu {
         width: 60%;
-    }    
-    
-    /*. Hero Tablet */
-    
-
-    .hero{
-        display:block;
     }
-    
-    .hero-img{
+
+    /*. Hero Tablet */
+
+
+    .hero {
+        display: block;
+        margin: auto;
+    }
+
+    .hero-img {
         margin-top: var(--mar-1);
-        width: 400px;
+        width: 55%;
         float: left;
-    }    
+    }
 
     .hero:before,
     .hero:after {
         content: " ";
         display: table;
     }
-    
+
     .hero:after {
         clear: left;
     }
-    
+
 
     /*. Features Tablet */
 
-    .features article{
+    .features article {
         flex-basis: 50%;
     }
 
-    .features img{
+    .features img {
         flex-basis: 50%;
     }
 
@@ -382,15 +382,16 @@ footer{
 
     /*. Nav Smartphone */
 
-    nav{
-    padding: 5px 20px;
+    nav {
+        width: 100vw;
+        padding: 5px 20px;
     }
 
-    .nav-menu{
+    .nav-menu {
         display: none;
     }
 
-    .nav-menu-show{
+    .nav-menu-show {
         width: 150px;
         height: 190px;
         background-color: white;
@@ -400,128 +401,138 @@ footer{
         position: absolute;
         top: 45px;
         right: 0;
-        box-shadow: -3px 3px 5px rgba(143,143,143,0.3);
+        box-shadow: -3px 3px 5px rgba(143, 143, 143, 0.3);
         text-align: center;
     }
 
-    .nav-menu li{
+    .nav-menu li {
         margin: 0 1em;
         display: block;
     }
 
-    .nav-menu~i{
+    .nav-menu~i {
         font-size: 1.7rem;
         cursor: pointer;
     }
 
-    i.nav-button-show{
+    i.nav-button-show {
         display: block;
     }
-    
-    i.nav-button-hide{
+
+    i.nav-button-hide {
         display: none;
     }
 
     /*. Hero Smartphone */
 
-    .hero-img{
+    .hero{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-img {
         width: 100%;
         margin-top: var(--mar-1);
     }
 
-    .drop-down ul li{
+    .drop-down-button{
+        color: var(--primary-color);
+        cursor: pointer;
     }
 
-    .hide{
+    .drop-down ul li{
+        list-style-type: none;
+    }
+
+    .hide {
         display: none;
     }
 
     /*. Features Smartphone */
 
-    .features section{
+    .features section {
         flex-wrap: wrap;
     }
 
-    .features article{
-    flex-basis: 100%;
-    order: 1;
+    .features article {
+        flex-basis: 100%;
+        order: 1;
     }
 
-    .features img{
-    flex-basis: 100%;
-    order: 2;
+    .features img {
+        flex-basis: 100%;
+        order: 2;
     }
 
     /*. Contact Smartphone */
 
-    .contact{
+    .contact {
         width: 296px;
         margin: auto;
     }
 
     /*. Social Media Smartphone */
 
-    .social-media{
+    .social-media {
         width: 100%;
         height: 392px;
     }
-    
-    .social-media a{
+
+    .social-media a {
         flex-wrap: wrap;
         margin: 0;
     }
 
-    .social-media i{
+    .social-media i {
         flex-basis: 100%;
     }
 
     /*. Contact Form Smartphone */
 
-    .contact-form{
+    .contact-form {
         width: 296px;
         margin: auto;
     }
 
-    .contact-form h2{
+    .contact-form h2 {
         margin-top: calc(2*var(--mar-1));
         display: block;
     }
 
-    .contact-form input{
+    .contact-form input {
         width: 100%;
     }
 
-    .contact-form textarea{
-        width: 100%;    
+    .contact-form textarea {
+        width: 100%;
     }
 
-    
+
     /*. About Smartphone */
-    
-    .about{
+
+    .about {
         position: static;
         margin-top: calc(2*var(--mar-1));
     }
-    
-    .about h2{
+
+    .about h2 {
         margin-bottom: var(--mar-1);
     }
-    
-    .biodata{
+
+    .biodata {
         width: 296px;
     }
 
-    .biodata img{
+    .biodata img {
         position: static;
         border-radius: 50%;
         display: block;
         margin: 0 auto;
     }
-    
-    .biodata .atas{
+
+    .biodata .atas {
         margin-top: 10px;
         margin-left: 0;
         text-align: center;
     }
 }
-    
