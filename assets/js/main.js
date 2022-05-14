@@ -17,7 +17,7 @@ navButton.addEventListener('click', function() {
 });
 
 navButtonClose.addEventListener('click', function() {
-    
+
     navButton.setAttribute("class", "bx bx-menu nav-button-show");
     
     navButtonClose.setAttribute("class", "bx bx-x nav-button-hide");
@@ -25,6 +25,40 @@ navButtonClose.addEventListener('click', function() {
     navMenu.setAttribute("class", "nav-menu");
 
 });
+
+//. Smooth Scroll
+
+let pageScroll = document.querySelectorAll(".page-scroll");
+
+for(const paging of pageScroll){
+
+    paging.addEventListener('click', function(e){
+
+         let tujuan = this.getAttribute("href");
+
+         let elemenTujuan = document.querySelector(tujuan);
+         
+
+         document.querySelector('body').animate({
+        elemenTujuan.scrollIntoView({behavior: "smooth"})
+    }, 1000
+        );
+
+
+
+        e.preventDefault();
+    });
+}
+
+
+
+
+// pageScroll.addEventListener('click', function(){
+
+//     let href = this.getAttribute("href");
+//     console.log(href);
+
+// });
 
 
 //. Hero Dropdown
