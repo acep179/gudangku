@@ -38,3 +38,16 @@ dropDownButton.addEventListener('click', function(){
     dropDownButton.classList.toggle("drop-down-button");
     dropDownUl.classList.toggle("drop-down-ul");
 });
+
+
+//. Form ke Google Sheet
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxugr8PJSOZ0tGYkYmtgGKydtz0r8t95JJSO5dzT6QAUf2X6ODKvbANw3t9zErUgT5bHQ/exec'
+  const form = document.forms['gudangku-contact-form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })

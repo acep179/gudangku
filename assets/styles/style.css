@@ -433,6 +433,7 @@ footer {
     .nav-menu li {
         margin: 0 1em;
         display: block;
+        font-size: .9rem;
     }
 
     .nav-menu~i {
@@ -456,8 +457,12 @@ footer {
     }
 
     .hero-img {
-        width: 100%;
+        flex-basis: 100%;
         margin-top: var(--mar-1);
+    }
+
+    .hero-article{
+        flex-basis: 100%;
     }
 
     /*. Features Smartphone */
