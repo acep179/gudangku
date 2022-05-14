@@ -26,41 +26,6 @@ navButtonClose.addEventListener('click', function() {
 
 });
 
-//. Smooth Scroll
-
-let pageScroll = document.querySelectorAll(".page-scroll");
-
-for(const paging of pageScroll){
-
-    paging.addEventListener('click', function(e){
-
-         let tujuan = this.getAttribute("href");
-
-         let elemenTujuan = document.querySelector(tujuan);
-         
-
-         document.querySelector('body').animate({
-        elemenTujuan.scrollIntoView({behavior: "smooth"})
-    }, 1000
-        );
-
-
-
-        e.preventDefault();
-    });
-}
-
-
-
-
-// pageScroll.addEventListener('click', function(){
-
-//     let href = this.getAttribute("href");
-//     console.log(href);
-
-// });
-
-
 //. Hero Dropdown
 
 let dropDownButton = document.getElementById("dropDownButton");
@@ -72,6 +37,30 @@ dropDownButton.addEventListener('click', function(){
     dropDownButton.classList.toggle("drop-down-button");
     dropDownUl.classList.toggle("drop-down-ul");
 });
+
+//. Smooth Scroll Menggunakan JQuery + Close Navbar pada SmartPhone
+
+$('.page-scroll').on('click', function(e) {
+
+    navButton.setAttribute("class", "bx bx-menu nav-button-show");
+    
+    navButtonClose.setAttribute("class", "bx bx-x nav-button-hide");
+
+    navMenu.setAttribute("class", "nav-menu");
+
+    dropDownButton.classList.toggle("drop-down-button");
+    dropDownUl.classList.toggle("drop-down-ul");
+
+    var tujuan = $(this).attr('href');
+   
+    var elemenTujuan = $(tujuan);
+   
+    $('html , body').animate({
+     scrollTop: elemenTujuan.offset().top - 80
+    }, 1000);
+
+    e.preventDefault();
+   });
 
 
 //. Form ke Google Sheet
