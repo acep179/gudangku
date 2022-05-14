@@ -12,7 +12,7 @@ navButton.addEventListener('click', function() {
     
     navButtonClose.setAttribute("class", "bx bx-x nav-button-show");
 
-    navMenu.setAttribute("class", "nav-menu nav-menu-show")
+    navMenu.setAttribute("class", "nav-menu nav-menu-show");
     
 });
 
@@ -22,8 +22,19 @@ navButtonClose.addEventListener('click', function() {
     
     navButtonClose.setAttribute("class", "bx bx-x nav-button-hide");
 
-    navMenu.setAttribute("class", "nav-menu")
+    navMenu.setAttribute("class", "nav-menu");
 
 });
 
-let dropDownButton = document.getElementById("dropDownButton")
+
+//. Hero Dropdown
+
+let dropDownButton = document.getElementById("dropDownButton");
+
+let dropDownUl = document.getElementById("dropDownUl");
+
+dropDownButton.addEventListener('click', function(){
+
+    dropDownButton.classList.toggle("drop-down-button");
+    dropDownUl.classList.toggle("drop-down-ul");
+});

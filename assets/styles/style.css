@@ -95,16 +95,19 @@ nav {
 }
 
 .hero-img {
-    max-width: 822px;
+    margin-top: var(--mar-1);
+    flex-basis: 45%;
     min-width: 0;
 }
 
 .hero-article {
+    flex-basis: 55%;
     padding: 50px;
 }
 
 .hero-article h1 {
     color: var(--primary-color);
+    margin-top: var(--mar-1);
     margin-bottom: var(--mar-1);
     text-transform: uppercase;
 }
@@ -113,6 +116,28 @@ nav {
     margin-bottom: var(--mar-2);
     line-height: var(--lh-1);
 }
+
+
+.drop-down p{
+    cursor: pointer;
+}
+
+.drop-down p:hover{
+    color: var(--secondary-color);
+}
+
+.drop-down-button{
+    color: var(--primary-color);
+}
+
+.drop-down-ul{
+    display: none;
+}
+
+.drop-down ul{
+    list-style-type: none;
+}
+
 
 /*. Features */
 
@@ -433,19 +458,6 @@ footer {
     .hero-img {
         width: 100%;
         margin-top: var(--mar-1);
-    }
-
-    .drop-down-button{
-        color: var(--primary-color);
-        cursor: pointer;
-    }
-
-    .drop-down ul li{
-        list-style-type: none;
-    }
-
-    .hide {
-        display: none;
     }
 
     /*. Features Smartphone */
