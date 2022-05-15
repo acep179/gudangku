@@ -312,6 +312,26 @@ nav {
     100% {transform: rotate(360deg);}
 }
 
+.success-alert{
+    padding: .5em 1em;
+    background-color: #f6eefa;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+
+.error-alert{
+    padding: .5em 1em;
+    background-color: #fef5e8;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+.alert-bx{
+    cursor: pointer;
+}
+
 .d-none{
     display: none;
 }
