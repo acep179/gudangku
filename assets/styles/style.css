@@ -291,6 +291,14 @@ nav {
     cursor: pointer;
 }
 
+.btn-kirim:hover{
+    background-color: white;
+    color: var(--primary-color);
+    box-shadow: 0px 0px 5px 3px rgba(173,89,212,0.25) inset;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+}
+
 .btn-loading{
     display: flex;
 
@@ -312,23 +320,28 @@ nav {
     100% {transform: rotate(360deg);}
 }
 
-.success-alert{
+.success-alert, .error-alert{
+    width: 296px;
+    margin: auto;
+    margin-top: calc(-1.5*var(--mar-1));
+    margin-bottom: calc(2*var(--mar-1));
     padding: .5em 1em;
+    border-radius: 10px;
+}
+
+.success-alert{
     background-color: #f6eefa;
     border: 1px solid var(--primary-color);
-    border-radius: 10px;
     color: var(--primary-color);
 }
 
 .error-alert{
-    padding: .5em 1em;
     background-color: #fef5e8;
     border: 1px solid var(--secondary-color);
-    border-radius: 10px;
     color: var(--secondary-color);
 }
 
-.alert-bx{
+.success-alert-x, .error-alert-x{
     cursor: pointer;
 }
 
@@ -567,6 +580,10 @@ footer {
 
     .contact-form textarea {
         width: 100%;
+    }
+
+    .success-alert, .error-alert{
+        margin-top: var(--mar-1);
     }
 
 
