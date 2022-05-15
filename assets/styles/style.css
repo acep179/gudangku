@@ -280,15 +280,40 @@ nav {
     border-radius: 10px;
 }
 
-.contact-form button {
-    width: 107px;
-    height: 1.8rem;
+.btn-kirim, .btn-loading {
+    padding: .05em .7em;
     background-color: var(--primary-color);
     font-family: inherit;
     font-size: inherit;
     color: white;
     border: 1px solid black;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-loading{
+    display: flex;
+
+}
+
+.spinner{
+    width: 17px;
+    aspect-ratio: 1/1;
+    margin-right: 5px;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-top: 3px solid var(--primary-color);
+    align-self: center;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.d-none{
+    display: none;
 }
 
 /*. About */

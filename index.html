@@ -94,7 +94,7 @@
             </article>
             <img src="assets/img/laporku.png" alt="Laporku">
         </section>
-        <section id="featurePerpsi" class="feature-peripsi">
+        <section id="featurePeripsi" class="feature-peripsi">
             <img src="assets/img/peripsi.png" alt="Perisai Enkripsi">
             <article>
                 <h2>Fitur Peripsi : Perisai Enkripsi</h2>
@@ -195,11 +195,11 @@
         </svg>
     </main>
     <aside>
-        <div class="aside-title">
+        <div id="contact" class="aside-title">
             <h1>Tertarik dengan desain di atas?</h1>
             <h2>Segera Hubungi Kami !</h2>
         </div>
-        <div id="contact" class="contact">
+        <div class="contact">
             <h2>Kontak</h2>
             <div class="social-media">
                 <h3>Sosial Media</h3>
@@ -222,7 +222,7 @@
             </div>
             <div class="contact-form">
                 <h2>Kirim Pesan Anda:</h2>
-                <form name="gudangku-contact-form" action="">
+                <form name="gudangku-contact-form">
                     <label for="name">Nama:</label>
 
                     <br>
@@ -253,7 +253,11 @@
 
                     <textarea name="pesan" id="massage"></textarea>
 
-                    <button type="submit">Kirim</button>
+                    <button type="submit" class="btn-kirim">Kirim</button>
+                    <button class="btn-loading">
+                        <div class="spinner"></div>
+                        <p>Harap Tunggu :D</p>
+                    </button>
                 </form>
             </div>
         </div>
